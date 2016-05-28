@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Birds of India</string>
+    <string name="exp_name">Types of Birds</string>
+    <string name="srch_name">Search Birds</string>
+    <string name="abt_name">About the App</string>
+    <string name="quiz_name">Quiz</string>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--tools:context="com.example.android.birdsofindia.ExploreActivity"-->
+<!--android:id="@+id/exploregridview"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:columnWidth="90dp"-->
+<!--android:numColumns="auto_fit"-->
+<!--android:verticalSpacing="10dp"-->
+<!--android:horizontalSpacing="10dp"-->
+<!--android:stretchMode="columnWidth"-->
+<!--android:gravity="center"-->
+<!--/>-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.birdsofindia.ExploreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View style="@style/Sep"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/CatHead"
+                android:src="@drawable/flamingo" />
+
+            <TextView
+                style="@style/CatDesc"
+                android:text="Flamingoes"
+                android:id="@+id/flamText"
+                />
+        </LinearLayout>
+        <View style="@style/Sep"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/CatHead"
+                android:src="@drawable/pheasant" />
+
+            <TextView
+                style="@style/CatDesc"
+                android:text="Pheasants and Partridges"
+
+                android:id="@+id/pheaText"/>
+        </LinearLayout>
+        <View style="@style/Sep"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/CatHead"
+                android:src="@drawable/heron" />
+
+            <TextView
+                style="@style/CatDesc"
+                android:text="Herons and Egrets"
+                android:id="@+id/herText"/>
+        </LinearLayout>
+        <View style="@style/Sep"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/CatHead"
+                android:src="@drawable/hawk" />
+
+            <TextView
+                style="@style/CatDesc"
+                android:text="Hawks, Kites and Eagles"
+                android:id="@+id/hawkText"/>
+        </LinearLayout>
+        <View style="@style/Sep"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/CatHead"
+                android:src="@drawable/parrot"
+                />
+
+            <TextView
+                style="@style/CatDesc"
+                android:text="Parrots"
+                android:id="@+id/parText"/>
+        </LinearLayout>
+        <View style="@style/Sep"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/CatHead"
+                android:src="@drawable/owl"
+                />
+
+            <TextView
+                style="@style/CatDesc"
+                android:text="Owls"
+                android:id="@+id/owlText"/>
+        </LinearLayout>
+        <View style="@style/Sep"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/CatHead"
+                android:src="@drawable/kingfisher"
+                />
+
+            <TextView
+                style="@style/CatDesc"
+                android:text="Kingfishers"
+                android:id="@+id/kingText"/>
+        </LinearLayout>
+        <View style="@style/Sep"/>
+    </LinearLayout>
+</ScrollView>
+
