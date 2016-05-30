@@ -21,13 +21,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/divider"
+        >
 
         <View style="@style/Sep"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/ExpLyt">
 
             <ImageView
                 style="@style/CatHead"
@@ -41,9 +41,7 @@
         </LinearLayout>
         <View style="@style/Sep"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/ExpLyt">
 
             <ImageView
                 style="@style/CatHead"
@@ -57,24 +55,22 @@
         </LinearLayout>
         <View style="@style/Sep"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/ExpLyt">
 
             <ImageView
                 style="@style/CatHead"
-                android:src="@drawable/heron" />
+                android:src="@drawable/heron"
+                />
 
             <TextView
                 style="@style/CatDesc"
                 android:text="Herons and Egrets"
-                android:id="@+id/herText"/>
+                android:id="@+id/herText"
+                android:background="@color/primary_light"/>
         </LinearLayout>
         <View style="@style/Sep"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/ExpLyt">
 
             <ImageView
                 style="@style/CatHead"
@@ -87,9 +83,7 @@
         </LinearLayout>
         <View style="@style/Sep"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/ExpLyt">
 
             <ImageView
                 style="@style/CatHead"
@@ -103,9 +97,7 @@
         </LinearLayout>
         <View style="@style/Sep"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/ExpLyt">
 
             <ImageView
                 style="@style/CatHead"
@@ -119,9 +111,7 @@
         </LinearLayout>
         <View style="@style/Sep"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/ExpLyt">
 
             <ImageView
                 style="@style/CatHead"

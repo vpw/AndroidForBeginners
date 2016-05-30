@@ -6,20 +6,23 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     >
-<LinearLayout
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="false"
     android:gravity="center"
-    android:orientation="vertical"
     android:layout_marginTop="25dp"
+    android:background="@color/primary_light"
     >
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/blossom_headed_parakeet" />
+        android:src="@drawable/blossom_headed_parakeet"
+        android:layout_marginTop="20dp"
+        android:id="@+id/AbtImg"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +32,12 @@
         android:text="Birds of India"
         android:textSize="45dp"
         android:textStyle="italic"
-        android:typeface="serif" />
+        android:typeface="serif"
+        android:textColor="@color/primary_text"
+        android:layout_below="@+id/AbtImg"
+        android:id="@+id/AbtTitle"
+        android:layout_centerHorizontal="true"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +46,12 @@
         android:text="brought to you by"
         android:textSize="20dp"
         android:textStyle="italic"
-        android:typeface="serif" />
+        android:typeface="serif"
+        android:textColor="@color/secondary_text"
+        android:layout_below="@+id/AbtTitle"
+        android:id="@+id/AbtBy"
+        android:layout_centerHorizontal="true"
+        />
     <!--<View android:layout_height="1dp"-->
     <!--android:layout_width="match_parent"-->
     <!--android:background="#AAAAAA"/>-->
@@ -50,12 +63,22 @@
         android:text="VPW studios"
         android:textSize="40dp"
         android:textStyle="italic"
-        android:typeface="serif" />
+        android:typeface="serif"
+        android:textColor="@color/primary_text"
+        android:layout_below="@+id/AbtBy"
+        android:id="@+id/AbtStud"
+        android:layout_centerHorizontal="true"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/AbtStud"
+        android:id="@+id/AbtRef"
+        android:layout_marginTop="25dp"
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,7 +91,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:text="Wikipedia\nXeno Canto"
-            android:textSize="18dp" />
+            android:textSize="18dp"
+            />
     </LinearLayout>
 
     <Button
@@ -78,7 +102,10 @@
         android:onClick="contact"
         android:text="Contact Us"
         android:textSize="10dp"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/AbtRef"/>
 
-</LinearLayout>
+</RelativeLayout>
 </ScrollView>

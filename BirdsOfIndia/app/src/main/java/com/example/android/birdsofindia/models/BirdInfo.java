@@ -5,13 +5,13 @@ package com.example.android.birdsofindia.models;
  */
 public class BirdInfo {
 
-    public final int imgId;
-    public final String name;
-    public final String sciName;
-    public final String desc;
-    public final int extImgId;
-    public final String url;
-    public final String sound;
+    public final int imgId; /* Resource ID of bird image */
+    public final String name; /* Birds common name */
+    public final String sciName; /* Birds scientific name */
+    public final String desc; /* Description */
+    public final int extImgId; /* extinction image ID */
+    public final String url; /* Wikipedia URL */
+    public final String sound; /* bird sound resource ID */
 
     public BirdInfo(int imgId, String name, String sciName, String desc, int extImgId, String url, String sound) {
         this.imgId = imgId;

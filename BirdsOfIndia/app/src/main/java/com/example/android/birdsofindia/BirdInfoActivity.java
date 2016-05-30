@@ -79,7 +79,7 @@ public class BirdInfoActivity extends AppCompatActivity {
      */
     public void extinctionToast(View v) {
         String extMsg = "Conservation status legend\nEX: Extinct\nEW:Extinct in the wild\nCR: Critically endangered\n"+
-                "EN: Endangered\nVU: Vulnerable\nNT: Near Threatened\nCD: Conservation dependent";
+                "EN: Endangered\nVU: Vulnerable\nNT: Near Threatened\nLC: Least Concern";
         Toast.makeText(getApplicationContext(), extMsg, Toast.LENGTH_LONG).show();
     }
 }
