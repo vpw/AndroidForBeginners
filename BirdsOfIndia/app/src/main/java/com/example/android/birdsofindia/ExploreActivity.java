@@ -28,30 +28,22 @@ public class ExploreActivity extends AppCompatActivity implements View.OnClickLi
          * Keep the text views for the bird categories in an array
          */
         tViews = new TextView[7];
-        tViews[0]=(TextView)findViewById(R.id.flamText);
-        tViews[1]=(TextView)findViewById(R.id.pheaText);
-        tViews[2]=(TextView)findViewById(R.id.herText);
-        tViews[3]=(TextView)findViewById(R.id.hawkText);
-        tViews[4]=(TextView)findViewById(R.id.parText);
-        tViews[5]=(TextView)findViewById(R.id.owlText);
-        tViews[6]=(TextView)findViewById(R.id.kingText);
+        tViews[0] = (TextView) findViewById(R.id.flamText);
+        tViews[1] = (TextView) findViewById(R.id.pheaText);
+        tViews[2] = (TextView) findViewById(R.id.herText);
+        tViews[3] = (TextView) findViewById(R.id.hawkText);
+        tViews[4] = (TextView) findViewById(R.id.parText);
+        tViews[5] = (TextView) findViewById(R.id.owlText);
+        tViews[6] = (TextView) findViewById(R.id.kingText);
 
         /**
          * Set onClickListener for each
          */
-        for(int i=0;i<7;i++) { tViews[i].setOnClickListener(this);}
-
-//        GridView gridview = (GridView) findViewById(R.id.exploregridview);
-//        gridview.setAdapter(new ImageAdapter(this));
-//
-//        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public void onItemClick(AdapterView<?> parent, View v,
-//                                    int position, long id) {
-//                Toast.makeText(ExploreActivity.this, "" + position,
-//                        Toast.LENGTH_SHORT).show();
-//            }
-//        });
+        for (int i = 0; i < 7; i++) {
+            tViews[i].setOnClickListener(this);
+        }
     }
+
     @Override
     public void onClick(View v) {
         /**
@@ -59,41 +51,37 @@ public class ExploreActivity extends AppCompatActivity implements View.OnClickLi
          */
         Intent intent = new Intent(this, ExploreTypesActivity.class);
 
+        intent.putExtra(MainActivity.EXTRA_IS_QUIZ_TRIGGER, false);
         /**
          * Depending on the view which was clicked, provide the BIRD_TYPE extra parameter
          * to the next ExploreTypes Activity
          */
-        if (v==tViews[0]) {
-            Log.d("INDIABIRDS","Flamingoes!!");
-            intent.putExtra(EXTRA_BIRD_TYPE,0);
+        if (v == tViews[0]) {
+            Log.d("INDIABIRDS", "Flamingoes!!");
+            intent.putExtra(EXTRA_BIRD_TYPE, 0);
+        } else if (v == tViews[1]) {
+            Log.d("INDIABIRDS", "Pheasants!!");
+            intent.putExtra(EXTRA_BIRD_TYPE, 1);
+        } else if (v == tViews[2]) {
+            Log.d("INDIABIRDS", "Herons!!");
+            intent.putExtra(EXTRA_BIRD_TYPE, 2);
+        } else if (v == tViews[3]) {
+            Log.d("INDIABIRDS", "Hawks!!");
+            intent.putExtra(EXTRA_BIRD_TYPE, 3);
+        } else if (v == tViews[4]) {
+            Log.d("INDIABIRDS", "Parrots!!");
+            intent.putExtra(EXTRA_BIRD_TYPE, 4);
+        } else if (v == tViews[5]) {
+            Log.d("INDIABIRDS", "Owls!!");
+            intent.putExtra(EXTRA_BIRD_TYPE, 5);
+        } else if (v == tViews[6]) {
+            Log.d("INDIABIRDS", "Kingfishers!!");
+            intent.putExtra(EXTRA_BIRD_TYPE, 6);
+        } else {
+            Log.e("INDIABIRDS", "Invalid button!!");
+            return;
         }
-        else if (v==tViews[1]) {
-            Log.d("INDIABIRDS","Pheasants!!");
-            intent.putExtra(EXTRA_BIRD_TYPE,1);
-            }
-        else if (v==tViews[2]) {
-            Log.d("INDIABIRDS","Herons!!");
-            intent.putExtra(EXTRA_BIRD_TYPE,2);
-            }
-        else if (v==tViews[3]) {
-            Log.d("INDIABIRDS","Hawks!!");
-            intent.putExtra(EXTRA_BIRD_TYPE,3);
-            }
-        else if (v==tViews[4]) {
-            Log.d("INDIABIRDS","Parrots!!");
-            intent.putExtra(EXTRA_BIRD_TYPE,4);
-            }
-        else if (v==tViews[5]) {
-            Log.d("INDIABIRDS","Owls!!");
-            intent.putExtra(EXTRA_BIRD_TYPE,5);
-            }
-        else if (v==tViews[6]) { Log.d("INDIABIRDS","Kingfishers!!");
-            intent.putExtra(EXTRA_BIRD_TYPE,6);
-            }
-        else { Log.e("INDIABIRDS","Invalid button!!");
-            return;}
 
         startActivity(intent);
     }
-
 }

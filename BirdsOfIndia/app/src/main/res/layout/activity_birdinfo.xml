@@ -8,6 +8,7 @@
     android:layout_width="match_parent"
     android:background="@color/primary_light">
 <LinearLayout
+    android:id="@+id/bird_info_ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="false"
@@ -28,6 +29,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="3dp">
         <TextView
+            android:id="@+id/sampleTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sample call: "

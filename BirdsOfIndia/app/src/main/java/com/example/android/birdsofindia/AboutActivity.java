@@ -16,9 +16,11 @@ public class AboutActivity extends AppCompatActivity {
 
     /**
      * On click call back for Contact Us
+     *
      * @param view
      */
     public void contact(View view) {
+        /* prepare to send mail to support */
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         String[] addresses = {"vpw.studios@gmail.com"};

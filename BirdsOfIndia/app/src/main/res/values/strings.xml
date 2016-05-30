@@ -4,4 +4,5 @@
     <string name="srch_name">Search Birds</string>
     <string name="abt_name">About the App</string>
     <string name="quiz_name">Quiz</string>
+    <string name="bird_info">Bird Information</string>
 </resources>

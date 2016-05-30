@@ -22,6 +22,7 @@ public class BirdInfo {
         this.url = url;
         this.sound = sound;
     }
+
     public BirdInfo(BirdInfo rhs) {
         this.imgId = rhs.imgId;
         this.name = rhs.name;

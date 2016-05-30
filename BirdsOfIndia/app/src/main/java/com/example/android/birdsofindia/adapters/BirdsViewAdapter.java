@@ -42,9 +42,9 @@ public class BirdsViewAdapter extends RecyclerView.Adapter<BirdsViewAdapter.Bird
 
         BirdInfo birdInfo = birds.get(position);
 //        if (textViewContactName != null) {
-            imageViewBird.setImageResource(birdInfo.imgId);
-            textViewBirdName.setText(birdInfo.name);
-            textViewBirdSciName.setText(birdInfo.sciName);
+        imageViewBird.setImageResource(birdInfo.imgId);
+        textViewBirdName.setText(birdInfo.name);
+        textViewBirdSciName.setText(birdInfo.sciName);
 
 //        }
     }
@@ -65,7 +65,7 @@ public class BirdsViewAdapter extends RecyclerView.Adapter<BirdsViewAdapter.Bird
                 public void onClick(View v) {
                     int pos = getAdapterPosition();
                     Intent intent = new Intent(context, BirdInfoActivity.class);
-                    intent.putExtra(EXTRA_BIRD_SPEC,pos);
+                    intent.putExtra(EXTRA_BIRD_SPEC, pos);
                     context.startActivity(intent);
                 }
             });
